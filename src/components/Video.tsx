@@ -41,7 +41,7 @@ export const Video = ({ lessonSlug }: VideoProps) => {
       </div>
 
       <div className="p-8 max-w-[1100px] mx-auto">
-        <div className="flex items-start gap-16">
+        <div className="flex items-start gap-6 flex-col xl:flex-row xl:gap-16">
           <div className="flex-1">
             <h1 className="text-2xl font-bold">{data.lesson.title}</h1>
             <p className="mt-4 text-gray-200 leading-relaxed">
@@ -68,7 +68,7 @@ export const Video = ({ lessonSlug }: VideoProps) => {
             )}
           </div>
 
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-4 w-full xl:w-auto">
             <a
               href="#"
               className="p-4 text-sm bg-green-500 flex items-center rounded font-bold uppercase gap-2 justify-center hover:bg-green-700 transition-colors"
@@ -87,9 +87,9 @@ export const Video = ({ lessonSlug }: VideoProps) => {
           </div>
         </div>
 
-        <div className="gap-8 mt-20 grid grid-cols-2">
+        <div className="gap-8 mt-16 xl:mt-20 grid grid-cols-1 xl:grid-cols-2 ">
           <a
-            href=""
+            href="#"
             className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors"
           >
             <div className="bg-green-700 h-full p-6 flex items-center">
@@ -102,13 +102,13 @@ export const Video = ({ lessonSlug }: VideoProps) => {
                 desenvolvimento
               </p>
             </div>
-            <div className="h-full p-6 flex items-center">
+            <div className="h-full p-6 flex flex-1 items-center justify-end">
               <CaretRight size={24} />
             </div>
           </a>
 
           <a
-            href=""
+            href="#"
             className="bg-gray-700 rounded overflow-hidden flex items-stretch gap-6 hover:bg-gray-600 transition-colors"
           >
             <div className="bg-green-700 h-full p-6 flex items-center">
@@ -121,7 +121,7 @@ export const Video = ({ lessonSlug }: VideoProps) => {
                 máquina
               </p>
             </div>
-            <div className="h-full p-6 flex items-center">
+            <div className="h-full p-6 flex items-center  flex-1 justify-end">
               <CaretRight size={24} />
             </div>
           </a>

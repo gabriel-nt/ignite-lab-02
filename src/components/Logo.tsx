@@ -1,9 +1,13 @@
-export const Logo = () => {
+interface LogoProps {
+  variant?: 'mobile' | 'desktop'
+}
+
+export const Logo = ({ variant = 'desktop' }: LogoProps) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width="237"
-      height="34"
+      width={variant === 'desktop' ? 237 : 167}
+      height={variant === 'desktop' ? 34 : 23}
       fill="none"
       viewBox="0 0 237 34"
     >
